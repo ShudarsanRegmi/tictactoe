@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  background-image: url("https://wallpaperaccess.com/full/2078954.jpg");
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+}
+.header>h1{
+  font-family: 'Holtwood One SC', serif;
+  text-decoration: underline;
+  color: #fff;
+}
+.outerbox {
+  display: grid;
+  grid-template-rows: repeat(3,1fr);
+  grid-template-columns: repeat(3,1fr);
+  background: #fff;
+
+  height: 300px;
+  width: 300px;
+}
+.cell {
+  border: 1px solid green;
+  display: flex;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-family: sans-serif;
+  font-weight: 700;
+  user-select: none;
+  border-left: 5px solid;
+  border-bottom: 5px solid;
+  cursor: pointer;
+}
+.cell:nth-child(1),.cell:nth-child(4),.cell:nth-child(7) {
+  border-left: 1px solid;
+}
+.cell:nth-child(7),
+.cell:nth-child(8),
+.cell:nth-child(9) {
+  border-bottom: 1px solid;
+}
+.gameOverBox {
+  background-color: cyan;
+  border: 1px solid black;
+  position: absolute;
+  text-align: center;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+
+}
+.gameOverBox>h1 {
+  font-family: 'Bree Serif', serif;
+  letter-spacing: 10px;
+  text-decoration: underline;
+}
+#winnerBox {
+  font-family: 'Heebo', sans-serif;
+  background-color: rgb(209, 231, 221);
+  color: rgb(0, 128, 0);
+  padding: 10px 50px;
+}
+.scoreBox {
+  display: flex;
+  background-color: orange;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.scoreBoxes {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.playerName {
+  font-size: 18px;
+  padding: 5px;
+  background-color: green;
+  border: 1px solid black;
+  color: #fff;
+}
+.score,.scoreT {
+  font-size: 20px;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #333;
+}
+#tieScore {
+  font-size: 30px;
+}
+#resetButton {
+  font-size: 18px;
+  padding: 5px;
+  background-color: rgb(0, 179, 115);
+  color: #fff;
+  border: 1px solid rgb(0, 179, 115);
+  outline: none;
+  width: 100%;
+  margin-top: 2px;
+  cursor: pointer;
+}
+.dashboard {
+  display: flex;
+  flex-direction: row;
+  background-color: green;
+  padding: 5px;
+  width: 300px;
+  justify-content: center;
+  align-items: center;
+}
+.splits {
+  flex-grow: 1;
+  border: 1px solid black;
+  text-align: center;
+}
+.splits>.score {
+  font-size: 30px;
+}
+.welcome {
+  position: absolute;
+  background-color: lightgreen;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+.welcome>h1 {
+  text-decoration: underline;
+  text-align: center;
+
+}
+.welcome-body {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+input {
+  height: 30px;
+  padding: 5px;
+}
+#gameStartBtn {
+  background-color: rgb(0, 179, 115);
+  color: #fff;
+  border: none;
+  outline: none;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.miniCon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

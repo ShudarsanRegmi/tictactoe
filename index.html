@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Tic Tac</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="welcome" id="welcome">
+        <h1>Tic Tac Toe</h1>
+        <div class="welcome-body">
+          <label for="p1Name">First Player </label>
+          <input type="text" id="p1Name" value="Player 1">
+          <label for="p2Name">Second Player </label>
+          <input type="text" id="p2Name" value="Player 2">
+          <input type="button" id="gameStartBtn" value="Start Game">
+          <span class="miniCon"> <label for="">Do not ask again: </label> <input type="checkbox" id="doNotAskCheckBox"> </span>
+        </div>
+      </div>
+      <div class="header">
+        <h1>Tic Tac Toe</h1>
+      </div>
+      <div class="gameOverBox" id="gameOverBox">
+        <h1>Game Over</h1>
+        <div class="footer">
+          <h4 id="winnerBox">player2 won the game</h4>
+          <div class="scoreBox">
+            <div class="player1ScoreBoard scoreBoxes"><span class="playerName">Player 1</span><span class="score">0</span></div>
+            <div class="player2ScoreBoard scoreBoxes"><span class="playerName">Player 1</span><span class="score">0 </span></div>
+            <div class="scoreBoxes"><span class="playerName">Tie</span><span class="scoreT tieScore">0</span></div>
+
+          </div>
+          <button type="button" id="resetButton">Play Again</button>
+        </div>
+      </div>
+      <div class="outerbox" id="outerbox">
+        <div class="cell" id="0"></div>
+        <div class="cell" id="1"></div>
+        <div class="cell" id="2"></div>
+        <div class="cell" id="3"></div>
+        <div class="cell" id="4"></div>
+        <div class="cell" id="5"></div>
+        <div class="cell" id="6"></div>
+        <div class="cell" id="7"></div>
+        <div class="cell" id="8"></div>
+      </div>
+      <div class="dashboard">
+        <div class="split1 splits">
+          <div class="playerName">Player 1</div>
+          <div class="score">0</div>
+        </div>
+        <div class="split2 splits">
+          <div class="playerName">Player 2</div>
+          <div class="score">0</div>
+        </div>
+        <div class="split2 splits">
+          <div class="playerName">Tie</div>
+          <div class="scoreT tieScore" id="tieScore">0</div>
+        </div>
+      </div>
+    </div>
+<script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
